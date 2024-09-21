@@ -1,0 +1,96 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{mathrsfs}
+\usepackage{caption}
+
+\usepackage{graphicx} % Required for inserting images
+\usepackage[a4paper,top=2cm,bottom=2.5cm,left=2.5cm,right=2.5cm,marginparwidth=0cm]{geometry}
+
+%link in latex
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=false,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Fondamenti_di_elettronica_digitale_BERARDO_CRISTIANO},
+    pdfpagemode=FullScreen,
+    }
+\urlstyle{same}
+\usepackage{afterpage}
+\usepackage[T1]{fontenc} % codifica dei font
+\usepackage[utf8]{inputenc} % lettere accentate da tastiera
+\usepackage[italian]{babel} % lingua del documento
+\usepackage{url} 
+\usepackage{quoting}
+\usepackage{xspace}% per lo spazio intelligente
+\usepackage{titlesec} % per formato custom dei titoli dei capitoli
+\usepackage{tcolorbox}%per i box
+
+\usepackage{float}
+\usepackage{sidecap}
+\usepackage{amsmath}
+\usepackage{pgfplots}   % per i grafici
+\pgfplotsset{width=7cm,compat=1.9}
+\usepackage{booktabs}
+\usepackage{amssymb}
+
+\usepackage{circuitikz}
+
+\usepackage{wrapfig}
+
+\graphicspath{{img/}}
+
+\newcommand{\vds}{V_{DS}}
+\newcommand{\vgs}{V_{GS}}
+\newcommand{\vt}{V_{T}}
+\newcommand{\vtn}{V_{TN}}
+\newcommand{\vdd}{V_{DD}}
+\newcommand{\vi}{$v_{I}$}
+\newcommand{\vo}{$v_{o}$}
+\newcommand{\vp}{$V_{+}$}
+\newcommand{\vm}{$V_{-}$}
+
+\newcommand{\vil}{$V_{IL}$}
+\newcommand{\vih}{$V_{IH}$}
+\newcommand{\vol}{$V_{OL}$}
+\newcommand{\voh}{$V_{OH}$}
+\newcommand{\vl}{$V_{L}$}
+\newcommand{\vh}{$V_{H}$}
+
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
+
+\begin{document}
+
+\input{pagina_iniziale}
+\afterpage{\blankpage}
+
+
+\tableofcontents
+
+
+\clearpage
+
+ \include{Materiali}
+ \include{MOSFET}
+
+ \include{Invertitore_logico}
+
+\include{CMOS}
+
+\include{pass_transistor}
+
+\include{logica_dinamica}
+
+\include{Circuiti_seq}
+
+\include{SSD}
+
+
+\end{document}
+
