@@ -12,5 +12,5 @@ Argomenti trattati:
 - Logica a pass transistor
 - Latches, Flip-Flop e Memorie
 - Memoria RAM - SRAM, DRAM
-- Semse Amplifier
+- Sense Amplifier
 - Memoria a stato solido - SSD
